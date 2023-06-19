@@ -1,0 +1,315 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}Home
+
+{% block body %}
+    <main class="">
+        <div class="py-32 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white text-center lg:py-40 xl:py-60">
+            <div class="text-3xl font-bold lg:text-4xl xl:text-7xl xl:font-medium animate__animated animate__fadeIn animate__slower">Together We Achieve Excellence
+            </div>
+            <div class="text-xs px-4 py-7 w-auto sm:px-40 xl:text-2xl lg:px-60 xl:px-60 animate__animated animate__fadeIn animate__slower">
+                <p>A dynamic online community designed to foster collaborative learning and academic excellence. Our platform brings together students from diverse backgrounds who are passionate about helping each other succeed!</p>
+            </div>
+            <div class="buttons w-auto py-8">
+                <a
+                    class="bg-white animate__animated animate__fadeIn animate__slower text-purple-900  hover:bg-purple-100 px-10 py-2 text-lg rounded-full lg:text-sm xl:text-xl xl:px-28" href="#features">Get
+                    Started</a>
+            </div>
+        </div>
+
+        <section id="secondary-features" class="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl md:text-center">
+                    <h2 class="font-display text-3xl tracking-tight text-purple-900 sm:text-4xl xl:text-5xl">For the students, by the students.</h2>
+                    <p class="mt-4 text-lg tracking-tight text-slate-700 xl:text-xl">Join us today and embark on a transformative journey of learning, collaboration, and personal development.</p>
+                </div>
+                <div class="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
+                    <div>
+                        <div class="mx-auto max-w-2xl">
+                            <p class="mt-2 font-display text-xl text-purple-600">Connect with Like-Minded Scholars and Expand Your Network.</p>
+                            <p class="mt-4 text-sm text-slate-600">Join a vibrant community of students, collaborate, and broaden your academic network.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mx-auto max-w-2xl">
+                            <p class="mt-2 font-display text-xl text-purple-600">Unlock New Horizons with Curated Study Resources and Courses.</p>
+                            <p class="mt-4 text-sm text-slate-600">Access premium learning materials, curated courses, and resources tailored to your educational journey.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mx-auto max-w-2xl">
+                            <p class="mt-2 font-display text-xl text-purple-600">Personalized Learning Paths to Guide Your Academic Journey.</p>
+                            <p class="mt-4 text-sm text-slate-600">Discover tailored learning paths designed to align with your goals, with advices from people who have already completed that path, helping you navigate your academic path effectively</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:mt-20 lg:flex lg:justify-evenly lg:px-7">
+                    <div class="grid grid-cols-3 gap-x-8" role="tablist" aria-orientation="horizontal">
+                        <div class="relative opacity-75 hover:opacity-100">
+                            <p class="mt-2 font-display text-2xl text-purple-600">Connect with Like-Minded Scholars and Expand Your Network.</p>
+                            <p class="mt-4 text-xl text-slate-600">Join a vibrant community of students, collaborate, and broaden your academic network.</p>
+                        </div>
+                        <div class="relative opacity-75 hover:opacity-100">
+                            <p class="mt-2 font-display text-2xl text-purple-600">Unlock New Horizons with Curated Study Resources and Courses.</p>
+                            <p class="mt-4 text-xl text-slate-600">Access premium learning materials, curated courses, and resources tailored to your educational journey.</p>
+                        </div>
+                        <div class="relative opacity-75 hover:opacity-100">
+                            <p class="mt-2 font-display text-2xl text-purple-600">Personalized Learning Paths to Guide Your Academic Journey.</p>
+                            <p class="mt-4 text-xl text-slate-600">Discover tailored learning paths designed to align with your goals, helping you navigate your academic path effectively</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <section class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-32" id="features">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl sm:text-center ">
+              <h2 class="font-display text-3xl tracking-tight text-white font-medium sm:text-4xl xl:text-5xl">What will you get</h2>
+              <p class="text-sm text-white mt-4 xl:text-xl">A vibrant community and resource to boost up your learning rendevour</p>
+          </div>
+          <div class="container px-5 py-24 mx-auto">
+              <div class="flex items-center lg:w-3/5 xl:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full border-2 text-indigo-500 flex-shrink-0">
+                  <img src="/static/database.svg" class="sm:w-16 sm:h-16 w-10 h-10" >
+                </img>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h2 class="text-white text-lg title-font font-medium mb-2 xl:text-xl">Resource Library</h2>
+                  <p class="leading-relaxed text-base xl:text-lg">Unlock a world of knowledge with our extensive collection of educational materials, from textbooks to research papers, empowering your academic pursuits.</p>
+                </div>
+              </div>
+              <div class="flex items-center lg:w-3/5 xl:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h2 class="text-white text-lg title-font font-medium mb-2 xl:text-xl">Virtual Study Groups</h2>
+                  <p class="leading-relaxed text-base xl:text-lg">Connect, collaborate, and excel together. Join dynamic study groups where you can discuss course materials, seek support, and learn from peers in a collaborative online environment.</p>
+                  
+                </div>
+                <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full border-2 text-indigo-500 flex-shrink-0">
+                  <img src="static/chat.svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10">
+                </img>
+                </div>
+              </div>
+              <div class="flex items-center lg:w-3/5 xl:w-full mx-auto sm:flex-row flex-col">
+                <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full border-2 text-indigo-500 flex-shrink-0">
+                  <img src="/static/fastforward.svg" class="sm:w-16 sm:h-16 w-10 h-10" >
+                </img>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h2 class="text-white text-lg title-font font-medium mb-2 xl:text-xl">Personalized Learning Paths</h2>
+                  <p class="leading-relaxed text-base xl:text-lg">Chart your unique path to success. Our personalized learning paths adapt to your needs, providing tailored recommendations and resources to help you achieve your academic goals.</p>
+                  
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="pricing py-8 md:py-32" id="pricing">
+      <div class="mx-auto max-w-7xl mt-4 px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col text-center w-full mb-10">
+          <h2 class="text-xs text-purple-500 tracking-widest font-medium title-font mb-1">ENGAGE AND LEARN</h2>
+          <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-purple-800">Be a part of the community.</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base xl:text-lg">The community of Athenas is a vibrant and inclusive space where students from around the world come together to support and learn from each other. It is a collaborative platform where members can engage in discussions, share their knowledge, and seek assistance in their studies. We aim to create a dynamic learning ecosystem that empowers students and enhances their educational journey.</p>
+        </div> 
+        <div class="text-purple-800 text-lg lg:text-base xl:text-lg  flex justify-center">
+          <a href="/login" class="border-purple-500 border-2 px-14 md:px-20 py-2 lg:py-2 xl:py-3 rounded-full hover:bg-purple-500 hover:text-white">Join</a>
+        </div>             
+      </div>
+    </section>
+
+    <section id="testimonials" aria-label="What our customers are saying" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 py-20 sm:py-32">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl md:text-center">
+                <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl xl:text-5xl">Loved by learners
+                    worldwide.</h2>
+                <p class="mt-4 text-lg tracking-tight text-white xl:text-xl">Athenas is designed with a delightful simplicity that captures hearts effortlessly. We provide a user-friendly experience that allows you to seamlessly navigate and enjoy the stuff that truly matters.
+                </p>
+            </div>
+            <ul role="list"
+                class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                    aria-hidden="true" width="105" height="78"
+                                    class="absolute left-6 top-6 fill-slate-100">
+                                    <path
+                                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                    </path>
+                                </svg>
+                                <blockquote class="relative">
+                                    <p class="text-lg tracking-tight text-slate-900">With Athenas, I'm thrilled to see my grades improve without feeling the financial strain. Now, if only I can figure out why my university's payment system keeps declining my card!
+                                    </p>
+                                </blockquote>
+                                <figcaption
+                                    class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                    <div>
+                                        <div class="font-display text-base text-slate-900">Sheryl Berge</div>
+                                        <div class="mt-1 text-sm text-slate-500">Student at Herdforshire</div>
+                                    </div>
+                                    <div class="overflow-hidden rounded-full bg-slate-50"><img alt="" loading="lazy"
+                                            width="56" height="56" decoding="async" data-nimg="1"
+                                            class="h-14 w-14 object-cover" style="color:transparent"
+                                            src="/static/p1.jpeg">
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                    aria-hidden="true" width="105" height="78"
+                                    class="absolute left-6 top-6 fill-slate-100">
+                                    <path
+                                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                    </path>
+                                </svg>
+                                <blockquote class="relative">
+                                    <p class="text-lg tracking-tight text-slate-900">I urgently reached out to Athenas support due to some issues, and I must say, their prompt response and assistance saved me from a potential disaster. Thank you for resolving my concerns in such a crucial moment!</p>
+                                </blockquote>
+                                <figcaption
+                                    class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                    <div>
+                                        <div class="font-display text-base text-slate-900">Amy Hahn</div>
+                                        <div class="mt-1 text-sm text-slate-500">Works at freelance</div>
+                                    </div>
+                                    <div class="overflow-hidden rounded-full bg-slate-50"><img alt="" loading="lazy"
+                                            width="56" height="56" decoding="async" data-nimg="1"
+                                            class="h-14 w-14 object-cover" style="color:transparent"
+                                            src="/static/p2.jpeg">
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                    aria-hidden="true" width="105" height="78"
+                                    class="absolute left-6 top-6 fill-slate-100">
+                                    <path
+                                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                    </path>
+                                </svg>
+                                <blockquote class="relative">
+                                    <p class="text-lg tracking-tight text-slate-900">With Athenas, I no longer find myself burdened with unnecessary tasks I used to deal with in the past. It's truly remarkable, although I can't help but feel a tinge of suspicion at how effortlessly it has transformed my academic routine.</p>
+                                </blockquote>
+                                <figcaption
+                                    class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                    <div>
+                                        <div class="font-display text-base text-slate-900">Leland Kiehn</div>
+                                        <div class="mt-1 text-sm text-slate-500">Sophomore at Germany</div>
+                                    </div>
+                                    <div class="overflow-hidden rounded-full bg-slate-50"><img alt="" loading="lazy"
+                                            width="56" height="56" decoding="async" data-nimg="1"
+                                            class="h-14 w-14 object-cover" style="color:transparent"
+                                            src="/static/p3.jpeg">
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                    aria-hidden="true" width="105" height="78"
+                                    class="absolute left-6 top-6 fill-slate-100">
+                                    <path
+                                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                    </path>
+                                </svg>
+                                <blockquote class="relative">
+                                    <p class="text-lg tracking-tight text-slate-900">I've been using Athenas for a while now, and it's incredible how it has transformed my learning experience. I used to struggle with managing my study resources, but with Athenas, everything is organized and easily accessible. It's a game-changer!</p>
+                                </blockquote>
+                                <figcaption
+                                    class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                    <div>
+                                        <div class="font-display text-base text-slate-900">Erin Powlowski</div>
+                                        <div class="mt-1 text-sm text-slate-500">Physics graduate</div>
+                                    </div>
+                                    <div class="overflow-hidden rounded-full bg-slate-50"><img alt="" loading="lazy"
+                                            width="56" height="56" decoding="async" data-nimg="1"
+                                            class="h-14 w-14 object-cover" style="color:transparent"
+                                            src="/static/p4.jpeg">
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                    aria-hidden="true" width="105" height="78"
+                                    class="absolute left-6 top-6 fill-slate-100">
+                                    <path
+                                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                    </path>
+                                </svg>
+                                <blockquote class="relative">
+                                    <p class="text-lg tracking-tight text-slate-900">The platform's intuitive design and user-friendly interface make it a joy to navigate. I've never felt so engaged and motivated to learn before</p>
+                                </blockquote>
+                                <figcaption
+                                    class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                    <div>
+                                        <div class="font-display text-base text-slate-900">Peter Renolds</div>
+                                        <div class="mt-1 text-sm text-slate-500">Student at Mumbai</div>
+                                    </div>
+                                    <div class="overflow-hidden rounded-full bg-slate-50"><img alt="" loading="lazy"
+                                            width="56" height="56" decoding="async" data-nimg="1"
+                                            class="h-14 w-14 object-cover" style="color:transparent"
+                                            src="/static/p5.jpeg">
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                    aria-hidden="true" width="105" height="78"
+                                    class="absolute left-6 top-6 fill-slate-100">
+                                    <path
+                                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                    </path>
+                                </svg>
+                                <blockquote class="relative">
+                                    <p class="text-lg tracking-tight text-slate-900">I can't thank them enough for the valuable study resources and curated courses they provide. It's like having access to a treasure trove of educational materials. My learning has become more focused and efficient, thanks to this platform.</p>
+                                </blockquote>
+                                <figcaption
+                                    class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                    <div>
+                                        <div class="font-display text-base text-slate-900">Amy Hahn</div>
+                                        <div class="mt-1 text-sm text-slate-500">Works in TCS</div>
+                                    </div>
+                                    <div class="overflow-hidden rounded-full bg-slate-50"><img alt="" loading="lazy"
+                                            width="56" height="56" decoding="async" data-nimg="1"
+                                            class="h-14 w-14 object-cover" style="color:transparent"
+                                            src="/static/p6.jpeg">
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+    
+
+    
+
+     <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+     
+
+
+{% endblock body %}

@@ -1,0 +1,130 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} - Athenas</title>
+    <link rel="icon" type="image/x-icon" href="/static/svg2.svg">
+    <link href= "{{STATIC_URL}}css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    {% tailwind_css %}
+</head>
+
+<body>
+    <nav class="sm:hidden bg-white flex px-4 py-4">
+        <div class="flex justify-start">
+          <img src="/static/svg2.svg" class="sm:w-16 sm:h-16 w-10 h-10"></img>
+        </div>
+        <div class="hidden mobile-menu mt-2 pt-14 mb-8">
+          <ul class="flex-wrap justify-center space-y-4">
+            <a href="/"><li class="cursor-pointer">Home</li></a>
+            <a href="/about"><li class="cursor-pointer">About</li></a>
+            <a href="/resources"><li class="cursor-pointer">Resources</li></a>
+            <a href="/courses"><li class="cursor-pointer">Courses</li></a>
+            <a href="/contact"><li class="cursor-pointer">Support</li></a>
+            <a href="/{{link}}" class="text-purple-700 border-purple-600  font-medium active:border-0 hover:border-b-2"><li class="cursor-pointer">{{var}}</li></a>
+          </ul>
+
+        </div>
+        <div class="container flex justify-end items-start py-1.5">
+          <button class="mobile-menu-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg>"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg></button>
+        </div>
+        
+        <script>
+          const btn= document.querySelector("button.mobile-menu-button");
+          const menu= document.querySelector(".mobile-menu")
+          btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+        </script>
+    </nav>
+    
+    
+
+
+    <nav class="hidden sm:flex bg-white  justify-between py-4">
+		<a href="/">
+			<div class="flex justify-center items-center space-x-2 pl-4"><img src="/static/svg2.svg"
+					class="w-8 h-8 xl:w-12 xl:h-12"></img>
+				<span class="text-sm xl:text-xl text-purple-950 flex items-center font-bold">Athenas</span>
+			</div>
+		</a>
+
+        <div class="flex">
+          <ul class="flex space-x-5 text-xs items-center justify-end px-10 md:space-x-10 xl:text-lg">
+            <a href="/"><li class="cursor-pointer border-purple-800 hover:border-b-2 active:border-0">Home</li></a>
+            <a href="/about"><li class="cursor-pointer border-purple-800 hover:border-b-2 active:border-0">About</li></a>
+            <a href="/resources"><li class="cursor-pointer border-purple-800 hover:border-b-2 active:border-0">Resources</li></a>
+            <a href="/courses"><li class="cursor-pointer border-purple-800 hover:border-b-2 active:border-0">Courses</li></a>
+            <a href="/contact"><li class="cursor-pointer border-purple-800 hover:border-b-2 active:border-0">Support</li></a>
+          </ul>
+          <div class=" flex text-xs xl:text-lg items-center">
+            <a href="/{{link}}"><button class="text-purple-700 border-purple-600  font-medium px-8 h-10  rounded-3xl active:border-0 hover:border-b-2  hover:border-r-2">{{ var }}</button></a>
+          </div>
+        </div>
+    </nav>
+
+	{% block body %}{% endblock body %}
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+  </script>
+
+	<footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="/static/svg2.svg" class="sm:w-16 sm:h-16 w-10 h-10" >
+                  </img>
+            <span class="ml-3 text-xl">Athenas</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 xl:text-lg">© 2023 Athenas —
+            <a href="https://www.linkedin.com/in/srijit-chakraborty154/" class="text-gray-500 ml-1" rel="noopener noreferrer" target="_blank">Srijit Chakraborty</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center  sm:justify-start">
+            
+            <a class="ml-3 text-gray-500" href="https://github.com/srijitt" target="_blank">
+              <img src="/static/brand-github-basic.svg" class="w-5 h-5"></img>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://www.instagram.com/__srijitt/" target="_blank">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/srijit-chakraborty154/" target="_blank">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+  </footer>
+
+</body>
+</html>
