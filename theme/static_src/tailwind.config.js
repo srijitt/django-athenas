@@ -20,6 +20,8 @@ module.exports = {
          */
         '../../templates/**/*.html',
 
+        "./Components/**/*.{js,ts,jsx,tsx}",
+
         /*
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
          * Adjust the following line to match your project structure.
