@@ -8,12 +8,14 @@ from datetime import datetime
 
 context= {
         'var':'Join',
-        'link':'login'
+        'link':'login',
+        'link1':'login'
     }
 
 context2= {
     'var':'Profile',
-    'link':'profile'
+    'link':'profile',
+    'link1':'resources'
 }
 
 def signin(request):
@@ -41,6 +43,7 @@ def signup(request):
 
         user= User.objects.create_user(username=n, email=e, password=p)
         user.save()
+        return render(request, 'hooray.html')
 
     return render(request, 'signup.html')
 
@@ -74,6 +77,14 @@ def resources(request):
         return render(request, 'resources.html', context2)
     else:
         return render(request, 'resources.html', context)
+    
+def notes(request):
+    if request.user.is_authenticated:
+        return render(request, 'notes.html', context2)
+    else:
+        return render(request, 'notes.html', context)
+
+
 
 def courses(request):
     if request.user.is_authenticated:
@@ -128,7 +139,8 @@ def course8(request):
         return render(request, 'course8.html', context2)
     else:
         return render(request, 'course8.html', context)
-    
+
+
 def event1(request):
     if request.user.is_authenticated:
         return render(request, 'event1.html', context2)
@@ -163,9 +175,6 @@ def thanks(request):
         return render(request, 'thanks.html', context)
 
 def contact(request):
-    
-
-
 
     if request.user.is_authenticated:
         if request.method == "POST":
