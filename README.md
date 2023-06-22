@@ -8,4 +8,4 @@ _Deployment:_ PythonAnywhere
 _Functionalities:_ User Authentication, Contact model, and login/logout updates.
 
 
-**Note:** It is not a fully functioning websites, and is just a model concept, representing my idea and my full-stack skills. If you wanna contribute, add new functionalities, you are most welcome. Do let me know.
+**Note:** It is not a fully functioning website, and is just a model concept, representing my idea and my full-stack skills. If you wanna contribute, add new functionalities, you are most welcome. Do let me know.
